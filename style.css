@@ -1,44 +1,57 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f4f4f9;  /* Fondo más claro */
+    color: #333;  /* Texto oscuro para buena legibilidad */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #2c3e50;  /* Color oscuro y elegante para el encabezado */
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-    border-bottom: 3px solid #333;  /* Agrega una línea debajo */
+    border-bottom: 2px solid #ccc;  /* Línea sutil debajo */
 }
 
 h1 {
     font-size: 2.5em;
-    margin: 0;  /* Eliminar el margen del título */
+    margin: 0;
 }
 
 h2 {
-    color: #4CAF50;
-    margin: 10px 0;
+    color: #ecf0f1;  /* Color gris claro para el subtítulo */
+    font-weight: normal;
+    margin-top: 5px;
 }
 
 section {
     padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;  /* Centrar el contenido */
 }
 
 .profile {
     text-align: left;  /* Alinea el perfil a la izquierda */
-    margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+}
+
+.profile h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .profile p {
-    margin: 5px 0;
+    margin: 10px 0;
+    line-height: 1.5;
 }
 
 .profile a {
-    color: #4CAF50;
+    color: #3498db;  /* Enlaces de color azul */
     text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;  /* Subraya el enlace al pasar el ratón */
 }
