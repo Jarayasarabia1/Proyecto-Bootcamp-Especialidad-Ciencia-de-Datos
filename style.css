@@ -1,60 +1,98 @@
+/* Importar fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;  /* Fondo más claro */
-    color: #333;  /* Texto oscuro para buena legibilidad */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;  /* Fondo gris claro */
+    color: #333;  /* Texto oscuro */
     margin: 0;
     padding: 0;
+    /* Añadir márgenes para que el contenido no esté pegado a los bordes */
+    padding: 20px;
 }
 
+/* Estilo del encabezado */
 header {
-    background-color: #2c3e50;  /* Color oscuro y elegante para el encabezado */
+    background-color: #1e3a8a;  /* Fondo azul oscuro */
     color: white;
-    padding: 30px;
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: 2px solid #ccc;  /* Línea sutil debajo */
+    border-bottom: 5px solid #4CAF50;  /* Línea verde debajo del encabezado */
+    margin-bottom: 30px;  /* Margen inferior para separarlo de las secciones */
 }
 
+/* Títulos principales */
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
 }
 
 h2 {
-    color: #ecf0f1;  /* Color gris claro para el subtítulo */
-    font-weight: normal;
-    margin-top: 5px;
+    font-size: 2.5em;
+    color: #4CAF50;  /* Color verde para títulos */
+    margin-top: 20px;
 }
 
+/* Sección principal */
 section {
     padding: 20px;
-    max-width: 900px;
-    margin: 20px auto;  /* Centrar el contenido */
+    max-width: 1000px;
+    margin: 20px auto;  /* Márgenes automáticos a los lados para centrar el contenido */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;  /* Separación entre secciones */
 }
 
-.profile {
-    text-align: left;  /* Alinea el perfil a la izquierda */
-    font-size: 1.1em;
+/* Diseño de dos columnas (izquierda para datos personales, derecha para contenido) */
+section .left-column {
+    float: left;
+    width: 30%;
+    padding-right: 20px;
+    margin-right: 20px;  /* Margen a la derecha para separar las columnas */
 }
 
-.profile h3 {
-    color: #2c3e50;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+section .right-column {
+    float: left;
+    width: 65%;
 }
 
-.profile p {
-    margin: 10px 0;
-    line-height: 1.5;
+/* Limpiar el float */
+section::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.profile a {
-    color: #3498db;  /* Enlaces de color azul */
+/* Listas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Enlaces */
+a {
+    color: #1e3a8a;  /* Azul para enlaces */
     text-decoration: none;
 }
 
-.profile a:hover {
-    text-decoration: underline;  /* Subraya el enlace al pasar el ratón */
+a:hover {
+    text-decoration: underline;
 }
 
+/* Estilo para las listas */
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
 
 
